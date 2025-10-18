@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
+:root {
+    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+body {
+    font-family: 'Carrois Gothic', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;    /*Prevent horizontal scroll*/
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;  /*Remove underline from links*/
+    color: #000;             
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-container {
+    box-sizing: border-box;   /*Include padding and border in element's total width and height*/
+    max-width: 1400px;
+    margin: 0 auto;           /*Center the container*/
+    justify-content: space-between; /*Distribute space between items*/
+    padding: 0 15px;        /*Horizontal padding*/
+    align-items: center;
+
+}
+
+.container {
+    box-sizing: border-box;   /*Include padding and border in element's total width and height*/
+    max-width: 1600px;
+    margin: 0 auto; 
+          
+}
+
+.header{
+    height: 80px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+
+
+}
+
+.header-list{
+    text-transform: uppercase;
+}
+
+.heavy-logo{
+    position: fixed;
+    top: 0.5%;
+    left: 44.5%;
+}
+
+.home{
+    align-items: center;
+}
+
+.home-title{
+    margin-top: 210px;
+    margin-bottom: 50px;
+}
+
+
+.home-card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+}
+
+.home-card:hover{
+    border: 1px solid #000;
+}
+
+.title-card {
+    max-width: 185px;
+    margin-top: 20px;
+    min-height: 40px;
+}
+
+.card-img{
+    width: 195px;
+    height: 195px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #0000004b;
+    border-radius: 5px;
+    background-image: url(../img/btnh.png);
+    transition: all .4s ease;
+    z-index: 2;
+}
+
+.home-btn:hover {
+    border: 1px solid #000000;
+}
+
+.frame1 {
+    position: absolute;
+    right: -0.5%;
+    bottom: 57%;
+    z-index: -1;
+}
+
+.frame2 {
+    position: absolute;
+    left: -0.5%;
+    bottom: 57%;
+    z-index: -1;
+}
+
+.frame3 {
+    position: absolute;
+    left: -0.3%;
+    top: 73.4%;
+    z-index: -1;
+}
+
+.frame4 {
+    position: absolute;
+    right: -0.3%;
+    top: 73.4%;
+    z-index: -1;
+}
+
+.logogothic {
+    position: absolute;
+    top: 6%;
+    left: 39%;
+    width: 400px;
+    height: 300px;
+}
+
+.subtitlee {
+    position: absolute;
+    bottom: 0%;
+    left: 44.5%;
+    z-index: -1;
+}
+
+.detail-image {
+    width: 650px;
+    height: 650px;
+}
+
+.detail-product {
+    margin-top: 80px;
+}
+
+.detail-description {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.detail-description p {
+    margin-top: 30px;
+    max-width: 700px;
+}
+
+.detail-description h2 span {
+    font-size: 56px;
+}
+
+.card-discount {
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+/* .card-discount .price {
+    margin-top: -1px;
+} */
+
+.line {
+    opacity: 0.7;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #00000034;
+    border-radius: 5px;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+.cart-btn:hover {
+    border: 1px solid #000000;
+}
+
+.main {
+    margin-left: 150px;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 65px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 10px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    margin-top: 70px;
+}
+
+.llist {
+    margin-left: 80px;
+}
+
+.sidebar ul li {
+    font-size: 20px;
+    width: 165px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+    margin-left: 15px;
+    width: 165px;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.selected {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-image: url(../img/categories-gtn.png);
+}

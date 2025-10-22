@@ -36,15 +36,25 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="id_password1" class="form-label form-stylereg">Password</label>
-                        <input type="password" class="form-control form-stylereg" id="id_password1"
+                        <input type="password" minlength="8" class="form-control form-stylereg" id="id_password1"
                         value="{% if form.password1.value %}{{ form.password1.value }}{% endif %}"
                         name="password1" placeholder="Your Password" required>
+                        {% if form.password1.errors %}
+                            <div class="text-danger small mt-1">
+                                {{ form.password1.errors.0 }}
+                            </div>
+                        {% endif %}
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="id_password2" class="form-label form-stylereg">Confirm Password</label>
                         <input type="password" class="form-control form-stylereg" id="id_password2"
                         value="{% if form.password2.value %}{{ form.password2.value }}{% endif %}"
                         name="password2" placeholder="Your Password" required>
+                            {% if form.password2.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ form.password2.errors.0 }}
+                                </div>
+                            {% endif %}
                     </div>
                 </div>
                 <button type="submit" class="login-btn form-style">Register</button>
